@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbearia Estilo Livre</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/logo.png" width="40" class="me-2" alt="logo">
+        Estilo Livre
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero d-flex align-items-center text-white">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">Seu estilo começa aqui</h1>
+    <p class="lead">Cortes modernos, barba perfeita e atendimento premium.</p>
+    <a href="#contato" class="btn btn-warning btn-lg">Agendar horário</a>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="py-5 mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <h2>Sobre Nós</h2>
+        <p>
+          A Estilo Livre é uma barbearia moderna focada em estilo, qualidade e
+          experiência. Trabalhamos com técnicas atuais para garantir que cada
+          cliente saia com confiança e personalidade.
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <img src="img/banner.png" class="img-fluid rounded" alt="">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Serviços</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <div class="card-body text-center">
+            <h5>Corte de Cabelo</h5>
+            <p>Cortes modernos e clássicos personalizados.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <div class="card-body text-center">
+            <h5>Barba</h5>
+            <p>Modelagem profissional e acabamento premium.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <div class="card-body text-center">
+            <h5>Hidratação</h5>
+            <p>Tratamento capilar para saúde e brilho.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Depoimentos</h2>
+
+    <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner text-center">
+
+        <div class="carousel-item active">
+          <p class="lead">"Melhor barbearia da cidade!"</p>
+          <strong>Lucas</strong>
+        </div>
+
+        <div class="carousel-item">
+          <p class="lead">"Atendimento incrível e ambiente top."</p>
+          <strong>João</strong>
+        </div>
+
+        <div class="carousel-item">
+          <p class="lead">"Sempre saio satisfeito."</p>
+          <strong>Pedro</strong>
+        </div>
+
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="bg-dark text-white py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contato</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <p><strong>Telefone:</strong> (41) 99999-0000</p>
+        <p><strong>Email:</strong> contato@estilolivre.com</p>
+      </div>
+
+      <div class="col-md-6">
+        <form>
+          <input class="form-control mb-3" type="text" placeholder="Nome" required>
+          <input class="form-control mb-3" type="email" placeholder="Email" required>
+          <textarea class="form-control mb-3" placeholder="Mensagem" required></textarea>
+          <button class="btn btn-warning w-100">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="bg-black text-white text-center py-3">
+  <p>© 2026 Estilo Livre</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
